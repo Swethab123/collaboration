@@ -1,0 +1,11 @@
+<div class="panel panel-info">
+	<div class="panel-heading">
+	<b>Blog Title:</b>{{blog.blogTitle}}<br> 
+	<b>Posted On:</b>{{blog.postedOn | date:'medium'}}<br>
+        <b>Posted By:</b>{{blog.postedBy.firstname}}   &nbsp   {{blog.postedBy.lastname}}<br>
+        </div>
+        <div class="panel panel-body">
+        <p ng-bind-html="content"></p>
+        </div>
+        {{blogpost.likes}} likes
+        </div>
